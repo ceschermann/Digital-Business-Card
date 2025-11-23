@@ -1,0 +1,118 @@
+Project Context & Rules: React + Node.js App
+
+1. Project Overview
+
+Frontend: React (Vite/CRA), Tailwind CSS (optional - adjust as needed).
+
+Backend: Node.js, Express.
+
+Database: [Insert Database, e.g., PostgreSQL/MongoDB].
+
+Purpose: [Insert brief description of app purpose].
+
+2. Core Architectural Principles
+
+Separation of Concerns: Keep business logic in the backend service layer, not in controllers or frontend components.
+
+State Management: Use [Context API / Redux / Zustand] for global state.
+
+API Communication: Use strict typing (TypeScript interfaces preferred) for API responses.
+
+3. Security Guidelines (CRITICAL)
+
+The AI Agent must strictly adhere to the following security protocols. Code violations will be rejected.
+
+A. Secrets Management
+
+Backend-Only Secrets: API keys, database credentials, and third-party secrets must NEVER be exposed to the client-side code.
+
+Environment Variables:
+
+Use .env files for all configuration.
+
+Access secrets via process.env (Node) or import.meta.env (Vite) only.
+
+Never hardcode secrets in source code.
+
+Proxies: If the frontend needs data from a third-party API (e.g., OpenAI, Stripe), create a Node.js proxy endpoint. Do not call third-party APIs directly from React.
+
+B. Encryption & Auth
+
+Passwords: Always hash passwords using bcrypt or argon2 before storing. Never store plain text.
+
+Data in Transit: Assume HTTPS.
+
+Authentication:
+
+Use HttpOnly, Secure cookies for storing Session IDs or JWTs (avoid localStorage for sensitive tokens if possible).
+
+Implement Middleware for protected routes (ensureAuthenticated).
+
+C. Input Validation
+
+Backend: Validate all incoming req.body and req.query parameters (recommend strict schema validation via Zod or Joi).
+
+Sanitization: Prevent SQL Injection and XSS by using parameterized queries (ORMs like Prisma/Mongoose handle this, but raw SQL must be parameterized).
+
+4. Quality Assurance (QA) & Testing Standards
+
+All new features require accompanying tests.
+
+A. Testing Stack
+
+Unit Testing: Jest or Vitest.
+
+Integration Testing: Supertest (for Node APIs).
+
+Component Testing: React Testing Library.
+
+B. Testing Requirements
+
+Backend Services: Write unit tests for some business logic functions (formatting, calculations, complex data manipulation).
+
+Frontend Components: Write tests ensuring components render and handle user events (clicks, form submissions) correctly.
+
+Mock all network requests in frontend tests.
+
+C. "Definition of Done" for Code Generation
+
+When generating code for a new feature, you (the Agent) must:
+
+Write the implementation code.
+
+Write the corresponding unit/integration test.
+
+Verify that error handling (try/catch blocks) is present.
+
+5. Coding Style & Conventions
+
+Naming: CamelCase for variables/functions, PascalCase for React components/Classes.
+
+Comments: Comment complex logic, but avoid commenting obvious code.
+
+Async/Await: Prefer async/await over .then() chains.
+
+Error Handling: Centralized error handling middleware in Node.js.
+
+6. Forbidden Patterns
+
+Do not use eval().
+
+Do not use any in TypeScript unless absolutely necessary (if using TS).
+
+Do not commit .env files.
+
+7. Workflow (The "Golden Loop")
+- **Step 1:** Create/Edit files.
+- **Step 2:** ALWAYS run the build/test command to verify it works.
+- **Step 3:** If errors occur, fix them automatically.
+- **Step 4:** Ask me before committing to GitHub.
+
+8. Deployment (Fly.io)
+- Deployment command: `fly deploy`
+- If the deployment fails, read the logs and suggest a fix.
+
+9. Communication Style
+- Explain *why* you are making a change.
+- Be encouraging and clear.
+- If you get stuck, ask me for help.
