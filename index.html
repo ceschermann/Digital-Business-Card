@@ -54,9 +54,21 @@
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 25px;
             margin-bottom: 20px;
+        }
+
+        @media (min-width: 1200px) {
+            .products-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 1600px) {
+            .products-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
         }
 
         .product-card {
@@ -346,7 +358,7 @@
                 price: 45000,
                 quantity: 12,
                 description: 'High-pressure turbine blade assembly for PW4000 series engines. Critical component requiring regular inspection.',
-                image: 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=400&h=300&fit=crop',
+                image: 'https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -359,7 +371,7 @@
                 price: 78500,
                 quantity: 3,
                 description: 'Carbon brake assembly for Boeing 737 series. Includes brake pads, pistons, and housing.',
-                image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400&h=300&fit=crop',
+                image: 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'Low Stock'
             },
@@ -372,7 +384,7 @@
                 price: 125000,
                 quantity: 0,
                 description: 'Dual-channel FMC with GPS and SBAS capability. Compatible with Boeing and Airbus platforms.',
-                image: 'https://images.unsplash.com/photo-1589254066007-f63c2ae4e96e?w=400&h=300&fit=crop',
+                image: 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=600&h=400&fit=crop',
                 condition: 'Overhauled',
                 status: 'Out of Stock'
             },
@@ -385,7 +397,7 @@
                 price: 235000,
                 quantity: 2,
                 description: 'Aluminum alloy leading edge section for A320 family. Includes de-icing components.',
-                image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&h=300&fit=crop',
+                image: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -398,7 +410,7 @@
                 price: 56000,
                 quantity: 8,
                 description: 'Primary hydraulic pump assembly with integrated motor and controls. 3000 PSI system.',
-                image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=300&fit=crop',
+                image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -411,7 +423,7 @@
                 price: 18500,
                 quantity: 24,
                 description: 'Fully reclining business class seat with entertainment system integration and USB charging.',
-                image: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=400&h=300&fit=crop',
+                image: 'https://images.unsplash.com/photo-1559268950-2d7ceb2efa68?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -424,7 +436,7 @@
                 price: 450,
                 quantity: 250,
                 description: 'High-temperature O-ring seal kit (50 pieces). Suitable for fuel and hydraulic systems.',
-                image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=300&fit=crop',
+                image: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -437,7 +449,7 @@
                 price: 165000,
                 quantity: 1,
                 description: 'APU generator assembly. Fully overhauled with 6-month warranty. 90kVA output.',
-                image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=300&fit=crop',
+                image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop',
                 condition: 'Overhauled',
                 status: 'Low Stock'
             },
@@ -450,7 +462,7 @@
                 price: 285000,
                 quantity: 2,
                 description: 'HPC disk for Trent 700 series. Life limit: 20,000 cycles. New with full traceability.',
-                image: 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=400&h=300&fit=crop',
+                image: 'https://images.unsplash.com/photo-1544951813-b9f1c5adb7c5?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -463,7 +475,7 @@
                 price: 1200,
                 quantity: 150,
                 description: 'Aerospace-grade titanium bolt and nut kit (100 pieces). Various sizes included.',
-                image: 'https://images.unsplash.com/photo-1581092918484-8313e1de6f5a?w=400&h=300&fit=crop',
+                image: 'https://images.unsplash.com/photo-1583939003600-8ac3dad5f3b3?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -476,7 +488,7 @@
                 price: 95000,
                 quantity: 5,
                 description: 'Complete fan blade set for CFM56-7B engine. Composite material with erosion coating.',
-                image: 'https://images.unsplash.com/photo-1583939003600-8ac3dad5f3b3?w=400&h=300&fit=crop',
+                image: 'https://images.unsplash.com/photo-1562832135-14a35d25edef?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -489,7 +501,7 @@
                 price: 28000,
                 quantity: 6,
                 description: '25kHz channel spacing VHF comm radio. TSO certified with 8.33kHz capability.',
-                image: 'https://images.unsplash.com/photo-1589254066213-a0c9dc853511?w=400&h=300&fit=crop',
+                image: 'https://images.unsplash.com/photo-1569629743817-70d8db6c323b?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             }
