@@ -14,20 +14,21 @@
 
         body {
             font-family: 'Lato', Arial, sans-serif;
-            background: #f5f5f5;
-            color: #333;
+            background: #f7f7f7;
+            color: #262b32;
         }
 
         .header {
-            background: #2c3e50;
+            background: linear-gradient(135deg, #9452BA 0%, #7a3d99 100%);
             color: white;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 25px 20px;
+            box-shadow: 0 2px 8px rgba(148, 82, 186, 0.2);
         }
 
         .header h1 {
-            font-size: 24px;
-            font-weight: 300;
+            font-size: 26px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
         }
 
         .container {
@@ -100,30 +101,34 @@
             font-size: 16px;
             font-weight: 600;
             margin-bottom: 8px;
-            color: #2c3e50;
+            color: #67768A;
         }
 
         .product-category {
             display: inline-block;
-            padding: 4px 12px;
-            background: #3498db;
+            padding: 5px 14px;
+            background: linear-gradient(135deg, #9452BA 0%, #7a3d99 100%);
             color: white;
-            border-radius: 3px;
-            font-size: 12px;
-            margin-bottom: 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .product-part-number {
-            color: #7f8c8d;
-            font-size: 14px;
+            color: #67768A;
+            font-size: 13px;
             margin-bottom: 4px;
+            font-weight: 500;
         }
 
         .product-price {
-            font-size: 18px;
-            font-weight: 600;
-            color: #27ae60;
-            margin-top: 8px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #9452BA;
+            margin-top: 10px;
         }
 
         .modal {
@@ -166,7 +171,7 @@
         .modal-title {
             font-size: 24px;
             font-weight: 600;
-            color: #2c3e50;
+            color: #67768A;
         }
 
         .close-btn {
@@ -174,17 +179,18 @@
             border: none;
             font-size: 28px;
             cursor: pointer;
-            color: #7f8c8d;
+            color: #67768A;
             padding: 0;
             width: 30px;
             height: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: color 0.2s;
         }
 
         .close-btn:hover {
-            color: #2c3e50;
+            color: #9452BA;
         }
 
         .modal-body {
@@ -212,19 +218,21 @@
 
         .detail-label {
             font-weight: 600;
-            color: #7f8c8d;
-            font-size: 12px;
+            color: #67768A;
+            font-size: 11px;
             text-transform: uppercase;
             margin-bottom: 5px;
             display: block;
+            letter-spacing: 0.5px;
         }
 
         .detail-value {
             font-size: 14px;
-            color: #2c3e50;
-            padding: 8px;
-            background: #f8f9fa;
-            border-radius: 3px;
+            color: #262b32;
+            padding: 10px;
+            background: #f7f7f7;
+            border-radius: 4px;
+            border: 1px solid #e8e8e8;
         }
 
         .detail-value input,
@@ -266,21 +274,21 @@
         }
 
         .btn-primary {
-            background: #3498db;
+            background: #9452BA;
             color: white;
         }
 
         .btn-primary:hover {
-            background: #2980b9;
+            background: #7a3d99;
         }
 
         .btn-success {
-            background: #27ae60;
+            background: #9452BA;
             color: white;
         }
 
         .btn-success:hover {
-            background: #229954;
+            background: #7a3d99;
         }
 
         .btn-secondary {
@@ -358,7 +366,7 @@
                 price: 45000,
                 quantity: 12,
                 description: 'High-pressure turbine blade assembly for PW4000 series engines. Critical component requiring regular inspection.',
-                image: 'https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=600&h=400&fit=crop',
+                image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -371,7 +379,7 @@
                 price: 78500,
                 quantity: 3,
                 description: 'Carbon brake assembly for Boeing 737 series. Includes brake pads, pistons, and housing.',
-                image: 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=600&h=400&fit=crop',
+                image: 'https://images.unsplash.com/photo-1581092918484-8313e1de6f5a?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'Low Stock'
             },
@@ -384,7 +392,7 @@
                 price: 125000,
                 quantity: 0,
                 description: 'Dual-channel FMC with GPS and SBAS capability. Compatible with Boeing and Airbus platforms.',
-                image: 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=600&h=400&fit=crop',
+                image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop',
                 condition: 'Overhauled',
                 status: 'Out of Stock'
             },
@@ -397,7 +405,7 @@
                 price: 235000,
                 quantity: 2,
                 description: 'Aluminum alloy leading edge section for A320 family. Includes de-icing components.',
-                image: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=400&fit=crop',
+                image: 'https://images.unsplash.com/photo-1581092918484-8313e1de6f5a?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -410,7 +418,7 @@
                 price: 56000,
                 quantity: 8,
                 description: 'Primary hydraulic pump assembly with integrated motor and controls. 3000 PSI system.',
-                image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&h=400&fit=crop',
+                image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -423,7 +431,7 @@
                 price: 18500,
                 quantity: 24,
                 description: 'Fully reclining business class seat with entertainment system integration and USB charging.',
-                image: 'https://images.unsplash.com/photo-1559268950-2d7ceb2efa68?w=600&h=400&fit=crop',
+                image: 'https://images.unsplash.com/photo-1581092918484-8313e1de6f5a?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -436,7 +444,7 @@
                 price: 450,
                 quantity: 250,
                 description: 'High-temperature O-ring seal kit (50 pieces). Suitable for fuel and hydraulic systems.',
-                image: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?w=600&h=400&fit=crop',
+                image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -449,7 +457,7 @@
                 price: 165000,
                 quantity: 1,
                 description: 'APU generator assembly. Fully overhauled with 6-month warranty. 90kVA output.',
-                image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop',
+                image: 'https://images.unsplash.com/photo-1581092918484-8313e1de6f5a?w=600&h=400&fit=crop',
                 condition: 'Overhauled',
                 status: 'Low Stock'
             },
@@ -462,7 +470,7 @@
                 price: 285000,
                 quantity: 2,
                 description: 'HPC disk for Trent 700 series. Life limit: 20,000 cycles. New with full traceability.',
-                image: 'https://images.unsplash.com/photo-1544951813-b9f1c5adb7c5?w=600&h=400&fit=crop',
+                image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -475,7 +483,7 @@
                 price: 1200,
                 quantity: 150,
                 description: 'Aerospace-grade titanium bolt and nut kit (100 pieces). Various sizes included.',
-                image: 'https://images.unsplash.com/photo-1583939003600-8ac3dad5f3b3?w=600&h=400&fit=crop',
+                image: 'https://images.unsplash.com/photo-1581092918484-8313e1de6f5a?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -488,7 +496,7 @@
                 price: 95000,
                 quantity: 5,
                 description: 'Complete fan blade set for CFM56-7B engine. Composite material with erosion coating.',
-                image: 'https://images.unsplash.com/photo-1562832135-14a35d25edef?w=600&h=400&fit=crop',
+                image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             },
@@ -501,7 +509,7 @@
                 price: 28000,
                 quantity: 6,
                 description: '25kHz channel spacing VHF comm radio. TSO certified with 8.33kHz capability.',
-                image: 'https://images.unsplash.com/photo-1569629743817-70d8db6c323b?w=600&h=400&fit=crop',
+                image: 'https://images.unsplash.com/photo-1581092918484-8313e1de6f5a?w=600&h=400&fit=crop',
                 condition: 'New',
                 status: 'In Stock'
             }
